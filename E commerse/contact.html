@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("images/e-commerce-background-vector-icon-shop-illustration-gradient-background-e-commerce-background-vector-icon-shop-illustration-152082526.jpg");
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header1 header1 header1 header1 header1 header1' 'header header header header header header' 'contact1 contact1 contact contact contact2 contact2' 'footer footer footer footer footer footer';
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .grid-container>div {}
+        
+        .grid-navbar {
+            grid-area: header;
+        }
+        
+        .grid-navbar1 {
+            grid-area: header1;
+        }
+        
+        .grid-contact {
+            grid-area: contact;
+        }
+        
+        .grid-contact-1 {
+            grid-area: contact1;
+        }
+        
+        .grid-contact-2 {
+            grid-area: contact2;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .nav1 {
+            background-color: #2f75cf;
+        }
+        
+        .nav1 li {
+            display: inline-block;
+            padding: 10px;
+        }
+        
+        .nav2 {
+            background-color: #71aae4;
+        }
+        
+        .nav2 li {
+            float: left;
+        }
+        
+        .nav2 li a {
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #111111;
+        }
+        
+        .search {
+            float: right;
+        }
+        
+        .box-form {
+            margin: 20px;
+            border: 1px solid #000000;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            background-color: #b4b4b2;
+        }
+        
+        .form-grp {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+        
+        .form-grp label {
+            height: 10px;
+            width: 100px;
+        }
+        
+        input[type=text] {
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        
+        input {
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        
+        button {
+            padding: 12px 20px;
+            box-sizing: border-box;
+            background-color: #2fc254;
+            border-radius: 5px;
+            color: #ffffff;
+        }
+        
+        .foot {
+            margin-top: 20px;
+            background-color: #2f75cf;
+            grid-area: footer;
+        }
+        
+        .foot img {
+            padding: 20px;
+            height: 60px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .foot ul {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        
+        .foot li {
+            display: inline;
+            color: white;
+            padding: 14px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-navbar1">
+            <ul class="nav1">
+                <li><img src="images/eshop-logo.png" alt="" id="logo" height="40px"></li>
+                <li class="search">
+                    <div class="searchbox"><input type="text" placeholder="Search..">&nbsp;<button class="btn">Search</button></div>
+                </li>
+            </ul>
+        </div>
+        <div class="grid-navbar">
+            <ul class="nav2">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="myorders.html">My orders</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="grid-contact-1">
+
+        </div>
+        <div class="grid-contact">
+            <table class="box-form">
+                <td>
+                    <form action="">
+                        <div class="form-grp">
+
+                            <label for="fname">First name :</label>
+                            <input type="text" id="fname" name="fname" placeholder="First Name">
+                        </div><br>
+
+                        <div class="form-grp">
+                            <label for="lname">Last name :</label>
+                            <input type="text" id="lname" name="lname" placeholder="Last name">
+                        </div>
+                        <br>
+                        <div class="form-grp">
+                            <label for="">E-mail :</label>
+                            <input type="email" id="email" name="lname" placeholder="E-mail">
+                        </div><br><br>
+                        <div class="form-grp">
+                            <label for="">Address :</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your address"></textarea><br><br>
+                        </div><br>
+
+                        <button style="float: right;">Submit</button>
+
+                    </form>
+                </td>
+            </table>
+        </div>
+
+        <div class="grid-contact-2">
+
+        </div>
+        <div class="foot">
+            <img src="images/eshop-logo.png" alt="">
+            <ul>
+                <li>UAE</li>
+                <li>Australia</li>
+                <li>India</li>
+                <li>UK</li>
+                <li>Canada</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
