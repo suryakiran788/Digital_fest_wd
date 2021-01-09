@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        body {
+            background-image: url("images/background.jpg");
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header1 header1 header1 header1 header1 header1' 'header header header header header header' 'main1 main1 main2 main2 main3 main3' 'footer footer footer footer footer footer';
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .grid-container>div {
+            padding: 0;
+        }
+        
+        .grid-navbar {
+            grid-area: header;
+        }
+        
+        .grid-navbar1 {
+            grid-area: header1;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .nav1 {
+            background-color: #2f75cf;
+        }
+        
+        .nav1 li {
+            display: inline-block;
+            padding: 10px;
+        }
+        
+        .nav2 {
+            background-color: #71aae4;
+        }
+        
+        .nav2 li {
+            float: left;
+        }
+        
+        .nav2 li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #111;
+        }
+        
+        .main1 {
+            grid-area: main1;
+        }
+        
+        .main2 {
+            grid-area: main2;
+        }
+        
+        .main3 {
+            grid-area: main3;
+        }
+        
+        #logo {
+            padding: 5px;
+        }
+        
+        .search {
+            float: right;
+        }
+        
+        input {
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        
+        button {
+            padding: 12px 20px;
+            box-sizing: border-box;
+            background-color: #2fc254;
+            border-radius: 5px;
+            color: #ffffff;
+        }
+        
+        .main-image {
+            padding: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 260px;
+            height: 280px;
+        }
+        
+        .main-image2 {
+            padding: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 260px;
+            height: 222px;
+        }
+        
+        .image-set {
+            padding: 30px;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 120px;
+            height: 107px;
+        }
+        
+        .main-border {
+            margin-left: 10px;
+            margin-top: 20px;
+            border-radius: 30px;
+        }
+        
+        .link-head {
+            text-align: center;
+            color: #1d1b1b;
+        }
+        
+        .bg-support {
+            height: 410px;
+            border: 1px solid #000000;
+            border-radius: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: #ffffff;
+        }
+        
+        .foot {
+            margin-top: 20px;
+            background-color: #2f75cf;
+            grid-area: footer;
+        }
+        
+        .foot img {
+            padding: 20px;
+            height: 60px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .foot ul {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        
+        .foot li {
+            display: inline;
+            color: #ffffff;
+            padding: 14px 16px;
+        }
+        
+        p {
+            text-align: justify;
+            color: #b41608;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-navbar1">
+            <ul class="nav1">
+                <li><img src="images/eshop-logo.png" alt="" id="logo" height="40px"></li>
+                <li class="search">
+                    <div class="searchbox"><input type="text" placeholder="Search..">&nbsp;<button class="btn">Search</button></div>
+                </li>
+            </ul>
+        </div>
+        <div class="grid-navbar">
+            <ul class="nav2">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="myorders.html">My orders</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+
+            </ul>
+        </div>
+
+        <div class="main1 main-border">
+            <div class="bg-support">
+                <h3 class="link-head">MY ORDERS</h3>
+                <a href="" class="orders">
+
+                    <img src="images/my-orders.png" class="main-image" alt="" srcset="">
+
+                </a>
+            </div>
+        </div>
+        <div class="main2 main-border">
+            <div class="bg-support">
+                <h3 class="link-head">Order Now (Style For Mens)</h3>
+
+                <a href="">
+
+                    <img src="images/OnePlus-mobile.png" alt="" srcset="" class="image-set">
+                    <img src="images/mac-laptop.jpeg" alt="" class="image-set"><br>
+                    <img src="images/mount-bikes.png" alt="" srcset="" class="image-set">
+                    <img src="images/kids-clothes.png" alt="" class="image-set">
+
+                </a>
+
+
+            </div>
+        </div>
+        <div class="main3 main-border">
+            <div class="bg-support">
+                <h3 class="link-head">About Us</h3>
+                <p>
+                    Welcome to eShop.in, Your primary online partner-manifesting all your wildest shopping fantasies right at your doorsteps.
+                </p>
+                <p>
+                    eShop.in is established through meticulous integration of different notions from a group of professionals,with a common target to impart to the world the ease of effortless shopping ,around an extensive range of worldwide brands.With eShop.in, You are
+                    only 1 click away from your favourite product at an incredibly low price.
+                </p>
+                <p>
+                    MISSION eShop.in is a miraculous online supermarket, catering to boundless categories of startling products ensconced to provide passionate service to global customers. At eShop.in, we entrust you quality with care.
+                </p>
+                <p>
+                    VISION eShop.in, is intended to dispense the unfledged felicity of shopping that fills customer hearts before their hands. eShop.in, is the first ever online e-trade arena of its kind,embodied to externalise the customer longings into concrete and genuine
+                    realities at an astonishingly affordable price.
+                </p>
+
+
+            </div>
+        </div>
+        <div class="foot">
+            <img src="images/eshop-logo.png" alt="">
+            <ul>
+                <li>UAE</li>
+                <li>Australia</li>
+                <li>India</li>
+                <li>UK</li>
+                <li>Canada</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -12,13 +12,11 @@
         
         .grid-container {
             display: grid;
-            grid-template-areas: 'header1 header1 header1 header1 header1 header1' 'header header header header header header' 'contact1 contact1 contact contact contact2 contact2' 'footer footer footer footer footer footer';
+            grid-template-areas: 'header1 header1 header1 header1 header1 header1' 'header header header header header header' 'myorder myorder myorder myorder myorder myorder' 'footer footer footer footer footer footer';
             padding-top: 10px;
             padding-left: 10px;
             padding-right: 10px;
         }
-        
-        .grid-container>div {}
         
         .grid-navbar {
             grid-area: header;
@@ -28,16 +26,9 @@
             grid-area: header1;
         }
         
-        .grid-contact {
-            grid-area: contact;
-        }
-        
-        .grid-contact-1 {
-            grid-area: contact1;
-        }
-        
-        .grid-contact-2 {
-            grid-area: contact2;
+        .grid-myorder {
+            grid-area: myorder;
+            padding: 20px;
         }
         
         ul {
@@ -73,38 +64,42 @@
         }
         
         li a:hover {
-            background-color: #111111;
+            background-color: #111;
         }
         
         .search {
             float: right;
         }
         
-        .box-form {
-            margin: 20px;
-            border: 1px solid #000000;
-            border-radius: 20px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 20px;
-            background-color: #b4b4b2;
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: separate;
+            border-spacing: 0 5px;
+            width: 100%;
         }
         
-        .form-grp {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: center;
+        td,
+        th {
+            text-align: left;
+            padding: 30px;
+            text-align: center;
         }
         
-        .form-grp label {
-            height: 10px;
-            width: 100px;
+        tr:nth-child(even) {
+            background-color: #dddddd;
         }
         
-        input[type=text] {
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
+        tr:nth-child(odd) {
+            background-color: #f3eaea;
+        }
+        
+        tr {
+            border: 1px solid #111010;
+        }
+        
+        .order-list-img {
+            height: 200px;
+            width: 200px;
         }
         
         input {
@@ -119,7 +114,7 @@
             box-sizing: border-box;
             background-color: #2fc254;
             border-radius: 5px;
-            color: #ffffff;
+            color: white;
         }
         
         .foot {
@@ -145,7 +140,7 @@
         
         .foot li {
             display: inline;
-            color: white;
+            color: #ffffff;
             padding: 14px 16px;
         }
     </style>
@@ -157,7 +152,7 @@
             <ul class="nav1">
                 <li><img src="images/eshop-logo.png" alt="" id="logo" height="40px"></li>
                 <li class="search">
-                    <div class="searchbox"><input type="text" placeholder="Search..">&nbsp;<button class="btn">Search</button></div>
+                    <div class="searchbox"><input type="text" placeholder="Search...">&nbsp;<button class="btn">Search</button></div>
                 </li>
             </ul>
         </div>
@@ -168,42 +163,34 @@
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
-        <div class="grid-contact-1">
+        <div class="grid-myorder">
+            <table>
+                <tr>
+                    <td><img src="images/toys.jpg" alt="" class="order-list-img"></td>
+                    <td>
+                        Assemble Unbreakable Automobile Car Toy (Set of 4, Multicolor)<br><br>Delivered on Dec 28,2019
+                        <h3>₹499</h3>
+                    </td>
 
-        </div>
-        <div class="grid-contact">
-            <table class="box-form">
-                <td>
-                    <form action="">
-                        <div class="form-grp">
+                </tr>
+                <tr>
+                    <td><img src="images/washing Machine.jpg" class="order-list-img" alt=""></td>
+                    <td>
+                        Whirlpool 7.5 Kg 5 Star Royal Plus Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL PLUS 7.5, Grey, Hard Water Wash) <br><br>Delivered on July 12,2020
+                        <h3>₹14999</h3>
+                    </td>
 
-                            <label for="fname">First name :</label>
-                            <input type="text" id="fname" name="fname" placeholder="First Name">
-                        </div><br>
+                </tr>
+                <tr>
+                    <td><img src="images/grindmixer1.jpg" class="order-list-img" alt=""></td>
+                    <td>
+                        Usha Trienergy Plus Mixer Grinder, 800 Watt Copper Motor with Quadri Flow Square Shaped Blender Jar, 6 fin Whirl Wind Food Safe Blade (Red)<br><br> Expected delivery Jan 16,2021
+                        <h3>₹2999</h3>
+                    </td>
 
-                        <div class="form-grp">
-                            <label for="lname">Last name :</label>
-                            <input type="text" id="lname" name="lname" placeholder="Last name">
-                        </div>
-                        <br>
-                        <div class="form-grp">
-                            <label for="">E-mail :</label>
-                            <input type="email" id="email" name="lname" placeholder="E-mail">
-                        </div><br><br>
-                        <div class="form-grp">
-                            <label for="">Address :</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your address"></textarea><br><br>
-                        </div><br>
-
-                        <button style="float: right;">Submit</button>
-
-                    </form>
-                </td>
+                </tr>
             </table>
-        </div>
-
-        <div class="grid-contact-2">
-
+            <br><br><br><br>
         </div>
         <div class="foot">
             <img src="images/eshop-logo.png" alt="">
@@ -215,6 +202,7 @@
                 <li>Canada</li>
             </ul>
         </div>
+
     </div>
 
 </body>
